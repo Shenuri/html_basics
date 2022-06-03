@@ -1,0 +1,69 @@
+Skip to content Search or jump to… Pull requests Issues Marketplace Explore
+@shenuriSumanasekara MouryaPM / htmlbasics Public Code Issues Pull requests
+Actions Projects Wiki Security Insights htmlbasics/tables/table.html Pooja
+Mourya basics form table Latest commit 611b042 on 23 Apr History 0 contributors
+63 lines (63 sloc) 1.32 KB
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Table</title>
+  </head>
+  <body>
+    <!-- Table block
+        table
+            tr - table rows
+                td - table data /columns
+                th - table heading 
+       -->
+    <table border="1">
+      <caption>
+        User table
+      </caption>
+      <!--headings  -->
+      <thead>
+        <tr>
+          <!-- th -->
+          <th>&nbsp;</th>
+          <th>Name</th>
+          <th>Lastname</th>
+        </tr>
+      </thead>
+      <!-- tbody -->
+      <tbody>
+        <!-- 1st row -->
+        <tr>
+          <!-- columns/data -->
+          <th>Grad Student</th>
+          <td>Pooja</td>
+          <td>Mourya</td>
+        </tr>
+        <!-- 2nd row -->
+        <tr>
+          <th>First Year</th>
+          <td>Neha</td>
+          <td>Mourya</td>
+        </tr>
+        <tr>
+          <th>Users</th>
+          <td colspan="2">Total Count : 2</td>
+        </tr>
+        <tr>
+          <th rowspan="3">Winner</th>
+          <td rowspan="3">Winners</td>
+          <td>Pooja</td>
+        </tr>
+        <tr>
+          <td>Neha</td>
+        </tr>
+        <tr>
+          <td>Priya</td>
+        </tr>
+      </tbody>
+      <!-- tfoot -->
+      <tfoot>
+        <td colspan="3">This is footer</td>
+      </tfoot>
+    </table>
+  </body>
+</html>

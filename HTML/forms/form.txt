@@ -1,0 +1,18 @@
+Forms
+
+    action: where to go
+    method: post/get
+
+input: where you get/collect information from user
+<input type="text">
+
+
+button
+<button></button>
+<input type="submit"/>
+
+http://127.0.0.1:5500/submit-data?
+
+http://127.0.0.1:5500 --> localhost
+submit-data  --> form action 
+? --> data 

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="/submit-data">
+      <!--  <input type="number" />
+      <input type="number" />
+      <input type="color" />
+      <input type="date" />
+      <input type="month" />
+      <input type="file" />
+      <input type="password" />
+      <input type="email" /> -->
+
+      <label>First Name : </label>
+
+      <input
+        type="text"
+        placeholder="Enter Name"
+        name="FirstName"
+        required
+        autofocus
+      />
+      <!--autofocus will highlight the field and the cursor will be there -->
+
+      <label>Email : </label>
+      <input type="text" placeholder="Enter email" name="email" required />
+
+      <br />
+
+      <!-- Radio Button -->
+
+      <!-- use of name=gender on each radio it will make the rado buttons as a group and we can only choose one option among all the options -->
+
+      <input type="radio" />Male <input type="radio" />Female
+      <br />
+
+      <label> <input type="radio" name="gender" value="male" />Male </label>
+      <label><input type="radio" name="gender" value="female" />Female</label>
+      <br />
+
+      <!-- button -->
+      <input type="submit" value="Input Button" />
+      <br />
+
+      <button type="submit">Button</button>
+      <br />
+
+      <!--Text area-->
+      <!-- cols: and rows: -->
+      <!-- maxlength gives the number of letters we can use in the textarea. if it is 150 we can use only 150 characters including spaces-->
+      <label for="review">Review</label>
+      <textarea
+        rows="15"
+        cols="50"
+        id="review"
+        name="review"
+        maxlength="150"
+      ></textarea>
+      <br />
+      <br />
+
+      <!--Drop down/select/ selectbox-->
+      <label>Colors: </label>
+      <select name="colors">
+        <option value="">--Select color--</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="pink">Pink</option>
+        <option value="blue">Blue</option>
+        <option value="gray">Gray</option>
+      </select>
+      <br />
+      <br />
+
+      <!--Drop down with multiple values-->
+      <label>Colors: </label>
+      <select name="colors" size="3" multiple>
+        <option value="">--Select color--</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="pink">Pink</option>
+        <option value="blue">Blue</option>
+        <option value="gray">Gray</option>
+      </select>
+    </form>
+
+    <!-- 
+        form url before using name tag
+        http://127.0.0.1:5500/submit-data? 
+        
+        http://127.0.0.1:5500 -> localhost
+        submit-data -> form action 
+        ? -> data (but data is not shown)
+
+
+        form url after using name tag
+
+        http://127.0.0.1:5500/submit-data?FirstName=shenuri  
+
+        http://127.0.0.1:5500 -> localhost
+        submit-data -> form action 
+        ? -> data ( data is shown as firstname=shenuri)
+
+        http://127.0.0.1:5500/submit-data?FirstName=shenuri&email=shenuri%40gmail.com
+
+         -->
+  </body>
+</html>

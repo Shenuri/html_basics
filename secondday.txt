@@ -1,0 +1,14 @@
+Folder structure
+
+project 
+    html
+    css
+    images
+    js
+
+
+
+
+to come out of the folder we use ..
+<img src ="../images/dog.jpg"/>
+<img src="../../images/dog.jpeg"/>
